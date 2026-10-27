@@ -1,0 +1,22 @@
+* {
+}
+
+#main {
+  max-width: 70%;
+  align-items: center;
+  display: flexbox;
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+fieldset {
+}
+
+
+button {
+  background-color: rgb(81, 203, 81);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 5rem 0.5rem 5rem;
+  border-radius: 1rem;
+}
