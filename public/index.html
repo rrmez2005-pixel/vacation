@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacation planner</title>
+  <link rel="icon" href="images/plane.png"> 
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  
+  <div id="main">
+      <div class="banner">
+          <h1>Book Your Dream Vacation</h1>
+      </div>
+
+      <form id="vacationForm" action="/book" method="POST">
+          <fieldset>
+            <label for="Destination">Destination</label>
+            <select id="Destination" name="Destination">
+              <option value="none">Choose a destination</option>
+              <option value="Bali">Bali, Indonesia</option>
+              <option value="Paris">Paris, France</option>
+              <option value="Tokoyo">Tokoyo, Japan</option>
+              <option value="Maldives">Maldives</option>
+              <option value="NYC">New York City, USA</option>
+            </select>
+            <span class="err" id="err-Destination">Please choose a destination</span>
+          </fieldset>
+
+          <div class="row">
+              <fieldset class="Dept">
+                  <label for="date">Departure Date</label>
+                  <input type="date" id="date" name="date">
+                  <span class="err" id="err-date">Departure date is required</span>
+              </fieldset>
+
+              <fieldset class="Dept">
+                  <label for="guest">Number of travelers:</label>
+                  <input type="number" id="guest" name="guest" min="1">
+                  <span class="err" id="err-guest">Travelers must be greater than 0</span>
+              </fieldset>
+          </div>
+
+          <button type="submit" id="order-button">Find My Vacation</button> 
+      </form>
+  </div>
+
+  <div id="git">
+    <!--github-->
+      <a href="https://github.com/rrmez2005-pixel/vacation">GitHub</a>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
